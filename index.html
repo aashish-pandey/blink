@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM0</title>
+
+        <style>
+
+            .text{
+                font-size: 150px;
+                margin: 240px;
+                text-align: center;
+            }
+
+        </style>
+
+        <script>
+
+        function blink(){
+            if(document.getElementById('text').style.visibility == 'visible'){
+                document.getElementById('text').style.visibility = 'hidden';
+            }
+            else{
+                document.getElementById('text').style.visibility = 'visible';
+            }
+        };
+
+        window.setInterval(blink, 100);
+
+
+
+        </script>
+
+    </head>
+
+    <body>
+        <div class = "text" id = "text"><span> Good Night</span></div>
+
+    </body>
+
+
+
+</html>
